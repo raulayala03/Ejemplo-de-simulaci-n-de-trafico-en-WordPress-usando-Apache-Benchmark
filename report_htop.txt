@@ -1,0 +1,13 @@
+observations:
+  evaluation_if_server_could_handle_load:
+    - performance_metrics:
+        - stable_memory: 4240 requests per second # El sistema mantuvo una memoria estable con 4240 solicitudes por segundo.
+        - cpu_load_average: 30.6% # El promedio de uso de CPU fue de 30.6% durante el ataque.
+
+  specification_of_excessive_resource_usage:
+    - cpu_peak_usage:
+        - observed: true  # Observaste un pico de uso de CPU del 89.2% durante el ataque.
+        - peak_percentage: 89.2
+        - request_count_at_peak:
+            - value: 4240  # Con 4240 solicitudes por segundo se alcanzó el pico de uso de CPU.
+
